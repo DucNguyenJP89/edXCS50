@@ -1,0 +1,37 @@
+$primary-color: #0275d8;
+$inverse-color: #292b2c;
+$inverse-text: #f7f7f7;
+
+.headings {
+  background-color: $primary-color;
+  color: $inverse-text;
+  width: auto;
+  padding: 50px;
+  h1 {
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .headings {
+    h1::before {
+      content: "日本語を一緒に勉強しましょう！"
+    }
+
+    p::before {
+      content: "Exlore Japanese cultures and language with me."
+    }
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .headings {
+    h1::before {
+      content: "日本語を勉強しよう！";
+    }
+
+    p::before {
+      content: "Exlore the real Japanese."
+    }
+  }
+}

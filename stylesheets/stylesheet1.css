@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.headings {
+  background-color: #0275d8;
+  color: #f7f7f7;
+  width: auto;
+  padding: 50px;
+}
+.headings h1 {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 800px) {
+  .headings h1::before {
+    content: "日本語を一緒に勉強しましょう！";
+  }
+  .headings p::before {
+    content: "Exlore Japanese cultures and language with me.";
+  }
+}
+@media only screen and (max-width: 799px) {
+  .headings h1::before {
+    content: "日本語を勉強しよう！";
+  }
+  .headings p::before {
+    content: "Exlore the real Japanese.";
+  }
+}
+
+/*# sourceMappingURL=stylesheet1.css.map */
